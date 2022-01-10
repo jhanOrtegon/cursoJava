@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Usuarios</title>
+</head>
+<body>
+<h3>Formulario 2022</h3>
+<form method="post" action="/webapp-form/registro">
+    <div>
+        <label for="username">username</label>
+        <div><input type="text" name="username" id="username"></div>
+    </div>
+
+    <div>
+        <label for="password">password</label>
+        <div><input type="password" name="password" id="password"></div>
+    </div>
+
+    <div>
+        <label for="email">email</label>
+        <div><input type="email" name="email" id="email"></div>
+    </div>
+
+    <div>
+        <label for="pais">pais</label>
+        <div>
+            <select name="pais" id="pais">
+                <option value="0">seleccione un pais</option>
+                <option value="CO">COLOMBIA</option>
+                <option value="VE">VENEZUELA</option>
+                <option value="BR">BRASIL</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <label for="lenguajes">lenguajes</label>
+        <div>
+            <select name="lenguajes" id="lenguajes" multiple>
+                <option value="JAVA">JAVA</option>
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="MYSQL">MYSQL</option>
+                <option value="ANGULAR">ANGULAR</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <label>perfiles</label>
+        <div>
+            <label for="admin">Administrador</label>
+            <input type="checkbox"  value="ADMIN" name="perfiles" id="admin">
+        </div>
+
+        <div>
+            <label for="estandar">ESTANDAR</label>
+            <input type="checkbox" value="ESTANDAR" name="perfiles" id="estandar">
+        </div>
+
+        <div>
+            <label for="basico">BASICO</label>
+            <input type="checkbox" value="BASICO" name="perfiles" id="basico">
+        </div>
+    </div>
+
+    <div>
+        <label for="idioma">Idioma</label>
+    </div>
+
+    <div>
+        <label for="idioma">Español</label>
+        <input type="radio" value="Es" name="idioma" id="idioma">
+    </div>
+
+    <div>
+        <label for="idioma">Ingles</label>
+        <input type="radio" value="En" name="idioma" id="idioma">
+    </div>
+
+    <div>
+        <label>Habilitar</label>
+        <input type="checkbox"  name="habilitar" checked>
+    </div>
+
+    <div>
+        <input type="hidden" value="secreto" name="secreto" id="secreto">
+    </div>
+
+    <div>
+        <div>
+            <button type="submit">Enviar Datos</button>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
